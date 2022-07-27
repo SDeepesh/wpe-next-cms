@@ -1,0 +1,5 @@
+email: bpwpenext
+ssh_key: C:\Users\deepe\AppData\Roaming\Local\ssh\wpe-connect
+update_check: false
+analytics: false
+alpha_commands_access: true

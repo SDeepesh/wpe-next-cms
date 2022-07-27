@@ -1,0 +1,1059 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchConfigPage Render component renders with data 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthXl css-19r6kue-MuiContainer-root"
+    data-testid="search-config-container"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-l8v5xp-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 css-vok43g-MuiGrid-root"
+      >
+        <h4
+          class="MuiTypography-root MuiTypography-h4 css-e1alds-MuiTypography-root"
+        >
+          Search Config
+        </h4>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-ym3k52-MuiGrid-root"
+      >
+        <button
+          class="MuiLoadingButton-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root css-vgr4hz-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root"
+          data-testid="save-button"
+          id="mui-1"
+          tabindex="0"
+          type="button"
+        >
+          Save Config
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-13i4rnv-MuiGrid-root"
+    >
+      <h4
+        class="MuiTypography-root MuiTypography-h4 css-u1bmgx-MuiTypography-root"
+      >
+        Fuzziness
+      </h4>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-13i4rnv-MuiGrid-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1548yeq-MuiTypography-root"
+      >
+        Atlas Search will attempt to search for a match to every word in a search query exactly until Fuzziness is enabled. Once fuzziness is enabled it employs a one-letter-per-word tolerance ("distance") by default, so if you type "Hallo Warld" by accident you will get the results for both "Hello" and "World". You can increase this per-word distance to a maximum of 2, so "Haalo Waald" would work as per the previous example. Please note that the higher the fuzziness distance allowed the greater the performance & relevancy hit will be to your search experience.
+      </p>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-13i4rnv-MuiGrid-root"
+      data-testid="fuzzy-switch"
+    >
+      <span
+        class="MuiSwitch-root MuiSwitch-sizeMedium css-julti5-MuiSwitch-root"
+      >
+        <span
+          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-15is8qk-MuiButtonBase-root-MuiSwitch-switchBase"
+        >
+          <input
+            class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+            role="fuzzy-switch"
+            type="checkbox"
+          />
+          <span
+            class="MuiSwitch-thumb css-jsexje-MuiSwitch-thumb"
+          />
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </span>
+        <span
+          class="MuiSwitch-track css-1yjjitx-MuiSwitch-track"
+        />
+      </span>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-rje4ir-MuiGrid-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1548yeq-MuiTypography-root"
+      >
+        Distance: 1
+      </p>
+      <span
+        class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root Mui-disabled css-acjlv1-MuiSlider-root"
+        data-testid="fuzzy-distance"
+      >
+        <span
+          class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+        />
+        <span
+          class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+          style="left: 0%; width: 0%;"
+        />
+        <span
+          class="MuiSlider-mark MuiSlider-markActive css-6cwnna-MuiSlider-mark"
+          data-index="0"
+          style="left: 0%;"
+        />
+        <span
+          class="MuiSlider-mark css-1tfve6q-MuiSlider-mark"
+          data-index="1"
+          style="left: 100%;"
+        />
+        <span
+          class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb Mui-disabled css-1nze2z-MuiSlider-thumb"
+          data-focusvisible="false"
+          data-index="0"
+          style="left: 0%;"
+        >
+          <input
+            aria-label="Fuzzy Distance"
+            aria-orientation="horizontal"
+            aria-valuemax="2"
+            aria-valuemin="1"
+            aria-valuenow="1"
+            data-index="0"
+            disabled=""
+            max="2"
+            min="1"
+            step="1"
+            style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+            type="range"
+            value="1"
+          />
+        </span>
+      </span>
+    </div>
+    <div
+      class="MuiGrid-root css-vj1n65-MuiGrid-root"
+    >
+      <h4
+        class="MuiTypography-root MuiTypography-h4 css-u1bmgx-MuiTypography-root"
+      >
+        Models
+      </h4>
+      <p
+        data-testid="model-count"
+      >
+        1 models.
+      </p>
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthXl MuiContainer-disableGutters css-1dh72ei-MuiContainer-root"
+    >
+      <section
+        data-testid="search-config-form"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthXl css-18mapvm-MuiContainer-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-l8v5xp-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 css-os4vda-MuiTypography-root"
+              >
+                post
+              </h5>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-1uf7xjc-MuiTypography-root"
+              >
+                Field Name
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-1uf7xjc-MuiTypography-root"
+              >
+                Searchable
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-1uf7xjc-MuiTypography-root"
+              >
+                Weight
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                title
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxOutlineBlankIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1000
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 100%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 100%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="200"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="200"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                content
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1000
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 100%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 100%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="200"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="200"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                excerpt
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 0%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 0%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="1"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="1"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                slug
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxOutlineBlankIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  2312321
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 100%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 100%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="200"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="200"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-1pc4fzz-MuiTypography-root"
+          >
+            <strong>
+              Additonal Fields
+            </strong>
+          </p>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                author.displayName
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 0%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 0%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="1"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="1"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                tags.name
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 0%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 0%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="1"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="1"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                categories.name
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 0%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 0%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="1"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="1"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                TestGroup.numbertest
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 0%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 0%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="1"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="1"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                extraPostFields.rating
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 0%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 0%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="1"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="1"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <label
+                class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1u8bket-MuiFormLabel-root"
+              >
+                test.acfField
+              </label>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <span
+                class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1seydqo-MuiButtonBase-root-MuiCheckbox-root"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input css-1m9pwf3"
+                  data-indeterminate="false"
+                  type="checkbox"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CheckBoxIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container css-1hbmzt3-MuiGrid-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiFormLabel-colorPrimary css-fy262w-MuiFormLabel-root"
+                >
+                  1
+                </label>
+                <span
+                  class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-1qgjo3i-MuiSlider-root"
+                >
+                  <span
+                    class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+                  />
+                  <span
+                    class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+                    style="left: 0%; width: 0%;"
+                  />
+                  <span
+                    class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-1nze2z-MuiSlider-thumb"
+                    data-focusvisible="false"
+                    data-index="0"
+                    style="left: 0%;"
+                  >
+                    <input
+                      aria-orientation="horizontal"
+                      aria-valuemax="200"
+                      aria-valuemin="1"
+                      aria-valuenow="1"
+                      data-index="0"
+                      max="200"
+                      min="1"
+                      step="1"
+                      style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+                      type="range"
+                      value="1"
+                    />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;
